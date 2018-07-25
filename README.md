@@ -1,6 +1,6 @@
 # chrome-extensions-image-collecter
-collect images from webpage,and download locally </br>
-采集目标网页中的图片，并下载到本地
+chrome extension: collect images from webpage,and download locally </br>
+谷歌浏览器插件(扩展):采集目标网页中的图片，并下载到本地
 ## for use
 first of all,i am not be chrome extensions developer yet,and don't make registered，because i am a poor Lol...,so if you want use it,pls follow the steps below.
 
