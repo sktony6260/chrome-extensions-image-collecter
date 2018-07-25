@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body class="dm-img-download">
+  <div class="popup-wrap" id="popup-wrap">
+    <div class="qrcode">
+      <h2>current page qrcode</h2>
+      <div id="qrcode"></div>
+    </div>
+    <div class="img-downloader">
+      <h2>get images</h2>
+      <div class="option"><input class="smtext" id="selector" type="text" placeholder="css selector"> <span class="smbtn" id="get">get</span> <span class="smbtn" id="getall">get all</span> <span class="smbtn" id="save" data-btntext="save">save</span></div>
+      <div class="img-list" id="imglist">
+        <table>
+          <colgroup>
+              <col style="width: 40px; min-width: 40px;">
+              <col>
+          </colgroup>
+          <thead>
+              <tr>
+                <th><input type="checkbox" class="all" id="all" /></th>
+                <th>imagelist <span id="imgcount"></span></th>
+              </tr>
+          </thead>
+          <tbody>
+              
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/lib/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/lib/jquery-qrcode.js"></script>
+  <script type="text/javascript" src="js/lib/filesaver.js"></script>
+  <script type="text/javascript" src="js/lib/jszip.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>

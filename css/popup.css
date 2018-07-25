@@ -1,0 +1,71 @@
+body.dm-img-download{
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+.dm-img-download h2{
+  margin: 0;
+  padding: 0;
+}
+.popup-wrap{
+  width: 350px;
+  background: #eee;
+  box-shadow:  0 0 10px #eee inset;
+  padding: 10px;
+}
+.qrcode{
+  margin-bottom: 10px
+}
+.qrcode h2{
+  margin-bottom: 10px;
+}
+.option{
+  margin-bottom: 10px;
+}
+.img-downloader h2{
+  margin-bottom: 10px;
+}
+.img-list table{
+  width: 100%;
+  border-collapse: separate;
+}
+.img-list table tr td,.img-list table tr th{
+  border: 1px solid #eee;
+}
+.img-list table tr th{
+  background: #ddd;
+}
+.img-list .img-item{
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 0;
+}
+.img-list .img-item img{
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.smbtn{
+  text-decoration: none;
+  background: #A9CFF9;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  padding: 0 10px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.smtext{
+  height: 12px;
+  font-size: 12px;
+  padding: 4px 0;
+  border: 1px solid #A9CFF9;
+  width: 100px;
+  outline: none;
+  border-radius: 4px;
+  text-indent: 4px;
+  box-shadow: inset 0 0 10px #eee;
+}
