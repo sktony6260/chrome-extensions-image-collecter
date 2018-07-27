@@ -19,7 +19,7 @@ body.dm-img-download{
 .qrcode h2{
   margin-bottom: 10px;
 }
-.option{
+.option,.action{
   margin-bottom: 10px;
 }
 .img-downloader h2{

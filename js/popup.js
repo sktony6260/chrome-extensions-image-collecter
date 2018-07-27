@@ -34,7 +34,7 @@ var imgUrlAdapter = function(imgSrc){
   _imgSrc = _imgSrc.replace(/(?<=png|jpg|jpeg|gif)(.*)/,'');
   return _imgSrc;
 }
-var downloadImages = function(ele){
+var downloadImages = function(ele,regexp){
   if (imageItem.length<1) {
     alert('no images are available!');
     return;
@@ -47,6 +47,7 @@ var downloadImages = function(ele){
   // find every checked item
   imageItem.map(function (item, index) {
       var url = imgUrlAdapter(item.img);
+      url = url.replace(new RegExp(regexp),'');
       var ext = url.substr(url.lastIndexOf('.'),url.lastIndexOf('.') + 1);
       var filename = 'id_'+item.id.replace(/\//g,'_') + ext;
       var promise = urlToPromise(url);
@@ -147,7 +148,8 @@ $(document).ready(function(){
     console.log(imageItem);
   })
   .on('click','#save',function(){
-    downloadImages($(this));
+    var regexp = $('#regexp').val();
+    downloadImages($(this),regexp);
   });
 
 });
